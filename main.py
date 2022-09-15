@@ -5,18 +5,18 @@ import praw
 import requests
 
 # connect to reddit
-reddit = praw.Reddit(client_id='O97hL_NLQl0DTJwfjdRZkQ',
-                     client_secret='5KYC3Y4T3D3yE_GgdIil98BbY22l5Q',
-                     user_agent='DavidIvshin',
-                     username='David_ivshin',
-                     password='paraivshin365')
+reddit = praw.Reddit(client_id='user_id',
+                     client_secret='some_secter',
+                     user_agent='myname',
+                     username='username',
+                     password='password')
 
 url: ""
 quote: ""
 
 def get_new_image():
     global url, quote
-    subreddit = reddit.subreddit('90dayfianceuncensored')
+    subreddit = reddit.subreddit('nature')
     posts = subreddit.new(limit=50)
     for submission in posts:
         if not submission.stickied:
