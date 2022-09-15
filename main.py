@@ -6,7 +6,7 @@ import requests
 
 # connect to reddit
 reddit = praw.Reddit(client_id='user_id',
-                     client_secret='some_secter',
+                     client_secret='some_secret',
                      user_agent='myname',
                      username='username',
                      password='password')
